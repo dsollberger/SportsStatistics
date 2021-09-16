@@ -1,0 +1,23 @@
+---
+title: "scratch"
+author: "Derek Sollberger"
+date: "3/1/2021"
+output: html_document
+---
+
+# Install RetroSheet access
+
+* made `retrosheet` directory with `zipped` and `unzipped` subdirectories
+* downloaded [Chadwick](https://sourceforge.net/projects/chadwick/) and its executables
+* downloaded [parser](https://gist.github.com/bayesball/8892981) and formed into an `R` file
+
+```{r}
+source("parse_retrosheet_pbp.R")
+```
+
+# Load a Season of Retrosheet
+
+```{r}
+parse.retrosheet2.pbp(2020)
+```
+
